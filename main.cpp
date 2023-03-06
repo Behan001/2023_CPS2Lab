@@ -11,6 +11,7 @@ DigitalOut connectionLed(LED1);
 PwmOut Zaxis_p(LED2);
 PwmOut Zaxis_n(LED3);
 
+
 float calculateAngle(float x, float y, float z){
     float angle = 0;
     float bott_part = sqrt((y*y)+(z*z));
