@@ -26,7 +26,7 @@ int main() {
         connectionLed = 1;
         
     while(1) {
-        wait(1);
+        ThisThread::sleep_for(1);
         printf("result %f \r\n", calculateAngle(MMA.x(), MMA.y(), MMA.z()));
     }
 
